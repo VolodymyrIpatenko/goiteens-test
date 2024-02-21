@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href=" https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css "
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg =="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -54,8 +61,6 @@
 
         <div class="hero-top"></div>
         <div class="hero-bottom">
-
-          
           <p class="hero-second-text">
             Курс від GoITeens — це можливість розпочати кар’єру цифрового дизайнера вже у школі
           </p>
@@ -72,83 +77,117 @@
             участь у створенні вебсайтів, застосунків, програмного забезпечення, ігор, реклами тощо.
           </p>
 
-         <div class="info-container">
-
-           <div>
+          <div class="info-container">
             <div>
-            <p class="hero-info">Вік студентів</p>
-            <p class="hero-requirements">10-16 років</p>
+              <div>
+                <p class="hero-info">Вік студентів</p>
+                <p class="hero-requirements">10-16 років</p>
+              </div>
+
+              <div>
+                <p class="hero-info">Для навчання потрібно</p>
+                <p class="hero-requirements">комп'ютер чи ноутбук</p>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <p class="hero-info">Тривалість курсу</p>
+                <p class="hero-requirements">12/24 місяці</p>
+              </div>
+
+              <div>
+                <p class="hero-info">Випускників</p>
+                <div class="graduates-box">
+                  <img src="./graduates-img.png" alt="" />
+                  <span class="hero-requirements">420+</span>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div>
-            <p class="hero-info">Для навчання потрібно</p>
-            <p class="hero-requirements">комп'ютер чи ноутбук</p>
-          </div>
-           </div>
+          <form action="#" class="form">
+            <span class="form-span">
+              <svg class="form-close-sign" width="15" height="15">
+                <use href="./symbol-defs.svg#icon-close-sign"></use>
+              </svg>
+              <input class="form-input" type="text" placeholder="Введіть своє імʼя" />
+            </span>
 
-           <div>
-             <div>
-            <p class="hero-info">Тривалість курсу</p>
-            <p class="hero-requirements">12/24 місяці</p>
-          </div>
+            <span class="form-span">
+              <svg width="24" height="24" class="down">
+                <use href="./symbol-defs.svg#icon-chevron-down"></use>
+              </svg>
+              <svg class="form-close-sign" width="15" height="15">
+                <use href="./symbol-defs.svg#icon-close-sign"></use>
+              </svg>
+              <input class="form-input second" type="text" placeholder="+38 (066) 123 45 67" />
+            </span>
 
-          <div>
-            <p class="hero-info">Випускників</p>
-             <div class="graduates-box">
-               <img src="./graduates-img.png" alt="" />
-            <span class="hero-requirements">420+</span>
-             </div>
-          </div>
-           </div>
-         </div>
+            <span class="form-span">
+              <svg class="form-close-sign" width="15" height="15">
+                <use href="./symbol-defs.svg#icon-close-sign"></use>
+              </svg>
+              <input class="form-input" type="text" placeholder="Введіть свій email" />
+            </span>
 
-          <form action="#">
-            <input type="text" placeholder="Введіть своє імʼя" />
-            <input type="text" placeholder="+38 (066) 123 45 67" />
-            <input type="text" placeholder="Введіть свій email" />
-            <input type="text" placeholder="Введіть промокод" />
-            <button>Записатися на безоплатний урок</button>
+            <span class="form-span">
+              <svg class="form-close-sign" width="15" height="15">
+                <use href="./symbol-defs.svg#icon-close-sign"></use>
+              </svg>
+              <input class="form-input" type="text" placeholder="Введіть промокод" />
+            </span>
+
+            <button class="hero-btn">Записатися на безоплатний урок</button>
           </form>
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="programs">
       <div class="container">
-        <h2>Спробувати себе в дизайні може кожна дитина</h2>
-        <section>
-          <h2>Початковий курс Design Junior</h2>
+        <h2 class="programs-title">Спробувати себе в дизайні може кожна дитина</h2>
+        <section class="programs-left">
+          <h2 class="programs-left-title">Початковий курс Design Junior</h2>
           <div>
             <p>Група для дітей 10-12 років</p>
             <p>12 місяців</p>
             <p>2 заняття на тиждень по 60-90 хв</p>
           </div>
 
-          <p>
+          <p class="programs-left-text">
             Цей курс — знайомство з основами дизайну, популярними сервісами та інструментами
             початкового рівня. На ньому діти навчаться створювати графічні образи та використовувати
             їх для оформлення соцмереж та шкільних проєктів.
           </p>
-          <p>На цьому курсі студенти навчаються та працюють в таких програмах:</p>
+          <p class="programs-left-desc">
+            На цьому курсі студенти навчаються та працюють в таких програмах:
+          </p>
 
           <ul>
-            <li>
+            <li class="tool-list-item">
               <img src="./photopea.png" alt="" />
-              <p>Безкоштовний повноцінний редактор зображень, який працює у браузері</p>
+              <p class="tool-description">
+                Безкоштовний повноцінний редактор зображень, який працює у браузері
+              </p>
             </li>
-            <li>
+            <li class="tool-list-item">
               <img src="./canva.png" alt="" />
-              <p>Безкоштовний графічний редактор, який чудово підходить для новачків у дизайні</p>
+              <p class="tool-description">
+                Безкоштовний графічний редактор, який чудово підходить для новачків у дизайні
+              </p>
             </li>
-            <li>
+            <li class="tool-list-item">
               <img src="./wix.png" alt="" />
-              <p>Міжнародна платформа, яка дозволяє конструювати сайти без знання коду</p>
+              <p class="tool-description">
+                Міжнародна платформа, яка дозволяє конструювати сайти без знання коду
+              </p>
             </li>
           </ul>
         </section>
 
-        <section>
-          <h2>Професійний курс Digital Design</h2>
+        <section class="programs-right">
+          <h2 class="programs-left-title">Професійний курс Digital Design</h2>
           <div>
             <p>Група для підлітків 13-16 років</p>
             <p>24 місяці</p>
@@ -164,37 +203,47 @@
 
           <ul>
             <li>
-              <svg width="32" height="32">
-                <use href="./symbol-defs.svg#icon-photoshop"></use>
-              </svg>
-              <h3>Adobe Photoshop</h3>
+              <div class="tool-wrap">
+                <svg width="32" height="32">
+                  <use href="./symbol-defs.svg#icon-photoshop"></use>
+                </svg>
+                <h3>Adobe Photoshop</h3>
+              </div>
               <p>Найпопулярніший редактор растрових зображень від компанії Adobe</p>
             </li>
             <li>
-              <svg width="32" height="32">
-                <use href="./symbol-defs.svg#icon-Lightroom"></use>
-              </svg>
+              <div class="tool-wrap">
+                <svg width="32" height="32">
+                  <use href="./symbol-defs.svg#icon-Lightroom"></use>
+                </svg>
 
-              <h3>Adobe Lightroom</h3>
+                <h3>Adobe Lightroom</h3>
+              </div>
               <p>Найкращий графічний редактор Adobe для роботи з цифровими фотографіями</p>
             </li>
             <li>
-              <svg width="32" height="32">
-                <use href="./symbol-defs.svg#icon-Illustrator"></use>
-              </svg>
-              <h3>Adobe Illustrator</h3>
+              <div class="tool-wrap">
+                <svg width="32" height="32">
+                  <use href="./symbol-defs.svg#icon-Illustrator"></use>
+                </svg>
+                <h3>Adobe Illustrator</h3>
+              </div>
               <p>Програма компанії Adobe, яка створена для роботи з векторної графікою</p>
             </li>
             <li>
-              <svg width="32" height="32">
-                <use href="./symbol-defs.svg#icon-After-Effects"></use>
-              </svg>
-              <h3>Adobe After Effect</h3>
+              <div class="tool-wrap">
+                <svg width="32" height="32">
+                  <use href="./symbol-defs.svg#icon-After-Effects"></use>
+                </svg>
+                <h3>Adobe After Effect</h3>
+              </div>
               <p>Програма, в якій ваша дитини зробить свій перший анімаційний ролик</p>
             </li>
             <li>
-              <img src="./figma.png" alt="" />
-              <h3>Figma</h3>
+              <div class="tool-wrap">
+                <img src="./figma.png" alt="" />
+                <h3>Figma</h3>
+              </div>
               <p>Краща програма для створення дизайну сайтів та мобільних додатків</p>
             </li>
           </ul>
@@ -202,7 +251,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="course-programs">
       <div class="container">
         <h2>Програма курсу</h2>
         <ul>

@@ -102,13 +102,11 @@ button {
 } */
 
 .hero-bottom {
-  /* margin-top: 227px; */
   background-image: url('./hero-bottom.png');
   background-position: center;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 80px;
-  /* padding-top: 127px; */
   background-size: cover;
 }
 .hero-title {
@@ -179,14 +177,179 @@ button {
   border-top: 1px solid rgba(204, 104, 33, 1);
 }
 
-.graduates-box{
+.graduates-box {
   display: flex;
   align-items: center;
   gap: 12px;
   margin-top: 8px;
 }
 
+.form {
+  margin-top: 50px;
+}
+
+.form-input {
+  width: 100%;
+  height: 48px;
+  border-radius: 140px;
+  margin-bottom: 24px;
+  padding: 8px 24px;
+  border: 1px solid rgba(237, 237, 237, 1);
+}
+
+/* .form-span-code,.form-span-email,.form-span-name,.form-span-tel{
+  position: relative;
+}
+
+.form-close-sign{
+  position: absolute;
+  left: -35px;
+  top: 5px;
+} */
+
+.second {
+  padding-left: 78px;
+}
+
+.form-span {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.form-span:nth-child(2)::before {
+  content: '';
+  background-image: url('./ukr.png');
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 16px;
+  top: 12px;
+}
+
+.down {
+  top: 15px;
+  left: 52px;
+  position: absolute;
+}
+
+.form-close-sign {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.hero-btn {
+  width: 100%;
+  height: 48px;
+  border-radius: 104px;
+  padding: 8px 24px;
+  background-color: rgba(83, 49, 178, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: IBM Plex Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+/* Programs-section */
+
+.programs {
+  padding: 80px 0;
+}
+
+.programs-title {
+  font-family: IBM Plex Mono;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  color: rgba(26, 26, 26, 1);
+  text-transform: uppercase;
+
+  margin: auto;
+  margin-bottom: 32px;
+  max-width: 300px;
+}
+
+.programs-left {
+  padding-top: 24px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(235, 230, 250, 1);
+  margin-bottom: 40px;
+}
+
+.programs-left-title {
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0em;
+  margin-bottom: 24px;
+
+  color: rgba(26, 26, 26, 1);
+  text-transform: uppercase;
+}
+.programs-left-text {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  color: rgba(71, 71, 71, 1);
+  font-family: IBM Plex Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  
+}
+
+.programs-left-desc{
+  font-family: IBM Plex Sans;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color:rgba(71, 71, 71, 1);
+margin-bottom: 20px;
+}
+
+.tool-description{
+  font-family: IBM Plex Sans;
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(110, 110, 110, 1);
+border-bottom:1px solid rgba(194, 176, 245, 1) ;  
+padding-bottom: 16px;
+margin-top: 4px;
+}
+
+.tool-list-item{
+  margin-bottom: 20px;
+}
+
+.programs-right{
+  padding: 24px 20px;
+  background-color:rgba(250, 238, 230, 1);
+}
+
+.tool-wrap{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 4px;
+}
 /* footer */
+
+/* course-programs */
+
+.course-programs{
+  background-image: url("./cours.png");
+  background-color: rgba(245, 209, 184, 1);
+  padding: 80px 20px;
+}
 
 footer {
   background-color: rgba(26, 26, 26, 1);
