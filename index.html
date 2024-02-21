@@ -194,12 +194,14 @@
             <p>3 заняття на тиждень по 60-90 хв</p>
           </div>
 
-          <p>
+          <p class="program-desc">
             Повноцінна навчальна програма з дизайну сайтів, застосунків, ігор та реклами від школи
             GoIT, адаптована для підлітків. На курсі ми готуємо молодших спеціалістів з цифрового
             дизайну для роботи в комерційних проєктах.
           </p>
-          <p>На цьому курсі студенти навчаються та працюють в таких програмах:</p>
+          <p class="program-short-text">
+            На цьому курсі студенти навчаються та працюють в таких програмах:
+          </p>
 
           <ul>
             <li>
@@ -207,9 +209,11 @@
                 <svg width="32" height="32">
                   <use href="./symbol-defs.svg#icon-photoshop"></use>
                 </svg>
-                <h3>Adobe Photoshop</h3>
+                <h3 class="tool-name">Adobe Photoshop</h3>
               </div>
-              <p>Найпопулярніший редактор растрових зображень від компанії Adobe</p>
+              <p class="tool-desc">
+                Найпопулярніший редактор растрових зображень від компанії Adobe
+              </p>
             </li>
             <li>
               <div class="tool-wrap">
@@ -217,34 +221,42 @@
                   <use href="./symbol-defs.svg#icon-Lightroom"></use>
                 </svg>
 
-                <h3>Adobe Lightroom</h3>
+                <h3 class="tool-name">Adobe Lightroom</h3>
               </div>
-              <p>Найкращий графічний редактор Adobe для роботи з цифровими фотографіями</p>
+              <p class="tool-desc">
+                Найкращий графічний редактор Adobe для роботи з цифровими фотографіями
+              </p>
             </li>
             <li>
               <div class="tool-wrap">
                 <svg width="32" height="32">
                   <use href="./symbol-defs.svg#icon-Illustrator"></use>
                 </svg>
-                <h3>Adobe Illustrator</h3>
+                <h3 class="tool-name">Adobe Illustrator</h3>
               </div>
-              <p>Програма компанії Adobe, яка створена для роботи з векторної графікою</p>
+              <p class="tool-desc">
+                Програма компанії Adobe, яка створена для роботи з векторної графікою
+              </p>
             </li>
             <li>
               <div class="tool-wrap">
                 <svg width="32" height="32">
                   <use href="./symbol-defs.svg#icon-After-Effects"></use>
                 </svg>
-                <h3>Adobe After Effect</h3>
+                <h3 class="tool-name">Adobe After Effect</h3>
               </div>
-              <p>Програма, в якій ваша дитини зробить свій перший анімаційний ролик</p>
+              <p class="tool-desc">
+                Програма, в якій ваша дитини зробить свій перший анімаційний ролик
+              </p>
             </li>
             <li>
               <div class="tool-wrap">
                 <img src="./figma.png" alt="" />
-                <h3>Figma</h3>
+                <h3 class="tool-name">Figma</h3>
               </div>
-              <p>Краща програма для створення дизайну сайтів та мобільних додатків</p>
+              <p class="tool-desc">
+                Краща програма для створення дизайну сайтів та мобільних додатків
+              </p>
             </li>
           </ul>
         </section>
@@ -253,51 +265,57 @@
 
     <section class="course-programs">
       <div class="container">
-        <h2>Програма курсу</h2>
-        <ul>
-          <li><button>Design Junior (10-12р.)</button></li>
-          <li><button>Digital Design (13-16р.)</button></li>
+        <h2 class="course-programs-title">Програма курсу</h2>
+        <ul class="course-programs-list">
+          <li><button class="active-btn">Design Junior (10-12р.)</button></li>
+          <li><button class="unactive-btn">Digital Design (13-16р.)</button></li>
         </ul>
 
-        <video src=""></video>
+        <div class="video-container">
+          <!-- The 'controls' attribute adds the default video controls -->
+          <video controls>
+            <source src="./video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
 
-        <ul>
-          <li>
+        <ul class="programs-list">
+          <li class="programs-list-item">
             <div>
-              <p>семестр</p>
-              <div>40 занять</div>
+              <p class="semestr">семестр</p>
+              <div class="lessons-amount">40 занять</div>
             </div>
-            <p>Подивитися програму</p>
+            <p class="watch-program">Подивитися програму</p>
             <svg>
               <use></use>
             </svg>
           </li>
-          <li>
+          <li class="programs-list-item">
             <div>
-              <p>семестр</p>
-              <div>40 занять</div>
+              <p class="semestr">семестр</p>
+              <div class="lessons-amount">40 занять</div>
             </div>
-            <p>Подивитися програму</p>
+            <p class="watch-program">Подивитися програму</p>
             <svg>
               <use></use>
             </svg>
           </li>
-          <li>
+          <li class="programs-list-item">
             <div>
-              <p>семестр</p>
-              <div>40 занять</div>
+              <p class="semestr">семестр</p>
+              <div class="lessons-amount">40 занять</div>
             </div>
-            <p>Подивитися програму</p>
+            <p class="watch-program">Подивитися програму</p>
             <svg>
               <use></use>
             </svg>
           </li>
-          <li>
+          <li class="programs-list-item">
             <div>
-              <p>семестр</p>
-              <div>40 занять</div>
+              <p class="semestr">семестр</p>
+              <div class="lessons-amount">40 занять</div>
             </div>
-            <p>Подивитися програму</p>
+            <p class="watch-program">Подивитися програму</p>
             <svg>
               <use></use>
             </svg>
@@ -315,58 +333,59 @@
             </svg>
           </a>
 
-          <ul>
-            <li><a href="">UA</a></li>
-            <li><a href="">PL</a></li>
-            <li><a href="">RU</a></li>
-            <li><a href="">ES</a></li>
+          <ul class="languages-list">
+            <li><a class="languages-list-link" href="">UA</a></li>
+            <li><a class="languages-list-link" href="">PL</a></li>
+            <li><a class="languages-list-link" href="">RU</a></li>
+            <li><a class="languages-list-link" href="">PL</a></li>
+            <li><a class="languages-list-link" href="">ES</a></li>
           </ul>
 
-          <ul>
+          <ul class="social-list">
             <li>
-              <a href="">
+              <a href="" class="social-list-link">
                 <svg width="26" height="26">
                   <use href="./symbol-defs.svg#icon-telegram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href=""class="social-list-link">
                 <svg width="26" height="26">
                   <use href="./symbol-defs.svg#icon-insta"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="" class="social-list-link">
                 <svg width="26" height="26">
                   <use href="./symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="" class="social-list-link">
                 <svg width="26" height="26">
                   <use href="./symbol-defs.svg#icon-you-tube"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="" class="social-list-link">
                 <svg width="26" height="26">
                   <use href="./symbol-defs.svg#icon-tik"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="" class="social-list-link">
                 <svg width="26" height="26">
                   <use href="./symbol-defs.svg#icon-discord"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="" class="social-list-link">
                 <svg width="26" height="26">
                   <use href="./symbol-defs.svg#icon-linkedn"></use>
                 </svg>
@@ -375,32 +394,32 @@
           </ul>
         </div>
 
-        <div>
-          <ul>
-            <li><a href="">Курси</a></li>
-            <li><a href="">Мінікурси</a></li>
-            <li><a href="">Goiteens Club</a></li>
-            <li><a href="">Вакансії</a></li>
-            <li><a href="">Запроси друга</a></li>
+        <div class="footer-links-blok">
+          <ul class="footer-links">
+            <li class="footer-links-item"><a class="footer-links-link" href="">Курси</a></li>
+            <li class="footer-links-item"><a class="footer-links-link" href="">Мінікурси</a></li>
+            <li class="footer-links-item"><a class="footer-links-link" href="">Goiteens Club</a></li>
+            <li class="footer-links-item"><a class="footer-links-link" href="">Вакансії</a></li>
+            <li class="footer-links-item"><a class="footer-links-link" href="">Запроси друга</a></li>
           </ul>
 
-          <ul>
-            <li><a href="">Про нас</a></li>
-            <li><a href="">Безплатно</a></li>
-            <li><a href="">Блог</a></li>
-            <li><a href="">Контакти</a></li>
+          <ul class="footer-footer-links">
+            <li class="footer-links-item"><a class="footer-links-link" href="">Про нас</a></li>
+            <li class="footer-links-item"><a class="footer-links-link" href="">Безплатно</a></li>
+            <li class="footer-links-item"><a class="footer-links-link" href="">Блог</a></li>
+            <li class="footer-links-item"><a class="footer-links-link" href="">Контакти</a></li>
           </ul>
         </div>
 
-        <div>
-          <a href="tel:+38(073)5654596">
-            <svg width="12" height="16">
+        <div class="footer-agree">
+          <a class="footer-tel" href="tel:+38(073)5654596">
+            <svg class="footer-tel-icon" width="12" height="16">
               <use href="./symbol-defs.svg#icon-mobile"></use>
             </svg>
             +38 (073) 565 45 96
           </a>
 
-          <ul>
+          <ul class="payments-list">
             <li>
               <svg width="38" height="26">
                 <use href="./symbol-defs.svg#icon-Visa"></use>
@@ -413,10 +432,10 @@
             </li>
           </ul>
 
-          <ul>
-            <li><a href="">Публічний договір</a></li>
-            <li><a href="">Політика конфіденційності</a></li>
-            <li><a href="">Акції та знижки від GoITeens</a></li>
+          <ul class="agree-list">
+            <li class="agree-list-item"><a class="agree-list-link" href="">Публічний договір</a></li>
+            <li class="agree-list-item"><a class="agree-list-link" href="">Політика конфіденційності</a></li>
+            <li class="agree-list-item"><a class="agree-list-link" href="">Акції та знижки від GoITeens</a></li>
           </ul>
         </div>
       </div>

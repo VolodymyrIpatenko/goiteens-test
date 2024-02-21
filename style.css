@@ -299,43 +299,42 @@ button {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  
 }
 
-.programs-left-desc{
+.programs-left-desc {
   font-family: IBM Plex Sans;
-font-size: 16px;
-font-weight: 600;
-line-height: 24px;
-letter-spacing: 0em;
-text-align: left;
-color:rgba(71, 71, 71, 1);
-margin-bottom: 20px;
-}
-
-.tool-description{
-  font-family: IBM Plex Sans;
-font-size: 14px;
-font-weight: 400;
-line-height: 18px;
-letter-spacing: 0em;
-text-align: left;
-color: rgba(110, 110, 110, 1);
-border-bottom:1px solid rgba(194, 176, 245, 1) ;  
-padding-bottom: 16px;
-margin-top: 4px;
-}
-
-.tool-list-item{
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(71, 71, 71, 1);
   margin-bottom: 20px;
 }
 
-.programs-right{
-  padding: 24px 20px;
-  background-color:rgba(250, 238, 230, 1);
+.tool-description {
+  font-family: IBM Plex Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(110, 110, 110, 1);
+  border-bottom: 1px solid rgba(194, 176, 245, 1);
+  padding-bottom: 16px;
+  margin-top: 4px;
 }
 
-.tool-wrap{
+.tool-list-item {
+  margin-bottom: 20px;
+}
+
+.programs-right {
+  padding: 24px 20px;
+  background-color: rgba(250, 238, 230, 1);
+}
+
+.tool-wrap {
   display: flex;
   gap: 12px;
   align-items: center;
@@ -345,12 +344,268 @@ margin-top: 4px;
 
 /* course-programs */
 
-.course-programs{
-  background-image: url("./cours.png");
+.tool-desc {
+  font-family: IBM Plex Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(110, 110, 110, 1);
+}
+
+.tool-name {
+  font-family: IBM Plex Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(71, 71, 71, 1);
+}
+
+.course-programs {
+  background-image: url('./cours.png');
   background-color: rgba(245, 209, 184, 1);
   padding: 80px 20px;
 }
 
+.program-short-text {
+  font-family: IBM Plex Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(71, 71, 71, 1);
+  margin-top: 32px;
+  margin-bottom: 20px;
+}
+.program-desc {
+  font-family: IBM Plex Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(71, 71, 71, 1);
+}
+
+/* Course-programs */
+
+.course-programs-title {
+  font-family: IBM Plex Mono;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  color: rgba(26, 26, 26, 1);
+}
+
+.course-programs-list {
+  display: flex;
+  border-radius: 144px;
+  font-family: IBM Plex Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  width: 100%;
+
+  border-radius: 144px;
+  margin-bottom: 32px;
+}
+
+.active-btn {
+  border-radius: 144px;
+  height: 40px;
+  background-color: rgba(83, 49, 178, 1);
+}
+
+.unactive-btn {
+  height: 40px;
+  background-color: rgba(255, 255, 255, 1);
+
+  color: rgba(153, 153, 153, 1);
+}
+
+video {
+  width: 100%;
+}
+
+.video-container {
+  width: 100%;
+  /* You can set this to the desired width */
+  /* margin: 0 auto; */
+  background-color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.video-container::before {
+  content: 'Презентация курсу Web design';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  width: 198px;
+  margin: 0 auto;
+  font-family: IBM Plex Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+
+  color: rgba(255, 255, 255, 1);
+  pointer-events: none; /* Allows clicking through the text */
+}
+
+.programs-list-item {
+  width: 100%;
+  height: 84px;
+  border-radius: 16px;
+  padding-top: 24px;
+  padding-bottom: 16px;
+  padding-right: 12px;
+  padding-left: 55px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.lessons-amount {
+  width: 68px;
+  height: 18px;
+  border-radius: 11px;
+  border: 1px solid rgba(153, 153, 153, 1);
+  font-family: IBM Plex Mono;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0em;
+  color: rgba(153, 153, 153, 1);
+}
+
+.semestr {
+  font-family: IBM Plex Mono;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(83, 49, 178, 1);
+}
+
+.watch-program {
+  font-family: IBM Plex Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgba(101, 60, 217, 1);
+}
+
+/* Footer */
+
 footer {
+  padding: 40px 20px;
   background-color: rgba(26, 26, 26, 1);
+}
+
+.languages-list {
+  display: flex;
+  gap: 24px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.languages-list-link {
+  font-family: IBM Plex Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgba(171, 171, 171, 1);
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list-link {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-links-blok {
+  display: flex;
+  gap: 80px;
+  margin-top: 32px;
+  border-bottom: 1px solid rgba(63, 63, 63, 1);
+}
+
+.footer-links-item {
+  margin-bottom: 20px;
+}
+
+.footer-links-link {
+  font-family: IBM Plex Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-agree {
+  margin-top: 32px;
+}
+
+.footer-tel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-family: IBM Plex Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-tel-icon {
+  fill: currentColor;
+}
+
+.payments-list {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.agree-list {
+  margin-top: 24px;
+}
+
+.agree-list-item{
+  margin-bottom: 16px;
+}
+
+.agree-list-link {
+  text-decoration: underline;
+  color: rgba(171, 171, 171, 1);
+  font-family: IBM Plex Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  display: block;
 }
