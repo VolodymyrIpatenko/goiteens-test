@@ -32,19 +32,26 @@ header {
 
 @media screen and (min-width: 1199px) {
 
-  .programs{
-    position: relative;
-  }
-  .programs-title{
-    position: absolute;
-    top: 0;
-    right: 10px;
-  }
-  .programs-left{
-    margin-bottom: 518px;
+  .programs-right{
+    margin-top: 120px;
   }
 
-  .programs-container{
+
+  .programs {
+    position: relative;
+  }
+  .programs-title {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+  
+  }
+  .programs-left {
+    padding: 40px 32px;
+    /* margin-bottom: 518px; */
+  }
+
+  .programs-container {
     display: flex;
     gap: 24px;
   }
@@ -99,14 +106,13 @@ header {
     font-size: 22px;
     font-weight: 600;
     line-height: 29px;
-   
   }
 
-  .info-container{
+  .info-container {
     border-top: none;
   }
 
-  .graduates-box{
+  .graduates-box {
     display: flex;
     align-items: center;
     gap: 16px;
@@ -193,7 +199,6 @@ header {
 
   .hero {
     padding-top: 40px;
-    /* padding-bottom: 80px; */
   }
 }
 
@@ -273,23 +278,19 @@ button {
   }
 }
 
-
-  .info-container {
-    display: flex;
-    gap: 76px;
-    padding-top: 40px;
-    margin-top: 40px;
-  
-  }
+.info-container {
+  display: flex;
+  gap: 76px;
+  padding-top: 40px;
+  margin-top: 40px;
+}
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .hero {
     padding-top: 40px;
   }
 
-  
   .info-container {
-   
     border-top: 1px solid rgba(204, 104, 33, 1);
   }
 
@@ -389,8 +390,7 @@ button {
     margin-top: 20px;
   }
 
-
-/* 
+  /* 
   .info-container {
     display: flex;
     gap: 76px;
@@ -656,13 +656,16 @@ button {
     letter-spacing: 0em;
     text-align: left;
     color: rgba(110, 110, 110, 1);
+    max-width: 437px;
   }
 
-  .tool-list-item {
+  .tool-list-item:not(:last-child) {
     margin-bottom: 20px;
     padding-bottom: 17px;
     border-bottom: 1px solid rgba(194, 176, 245, 1);
   }
+
+
   .programs {
     padding: 80px 32px;
   }
@@ -678,8 +681,8 @@ button {
   }
 
   .programs-left {
+    max-height:772px;
     padding-top: 40px;
-    padding-bottom: 45px;
   }
   .programs-left-title {
     margin-bottom: 24px;
@@ -743,6 +746,7 @@ button {
     background-color: rgba(245, 209, 184, 1);
   }
 }
+
 
 @media screen and (max-width: 767px) {
   .course-program-title-tab {
@@ -964,7 +968,7 @@ video {
   line-height: 18px;
 
   color: rgba(255, 255, 255, 1);
-  pointer-events: none; /* Allows clicking through the text */
+  pointer-events: none; 
 }
 
 .programs-list-item {
