@@ -31,44 +31,41 @@ header {
 } */
 
 @media screen and (min-width: 1199px) {
-
-  .footer-tab-wrap{
+  .footer-tab-wrap {
     gap: 160px;
   }
 
-  .footer-links-blok{
+  .footer-links-blok {
     border: none;
   }
 
-  .footer-agree{
+  .footer-agree {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
   }
 
-   
-.agree-list-link {
-  text-decoration: underline;
-  color: rgba(171, 171, 171, 1);
-  font-family: IBM Plex Sans;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 21px;
-  text-align: right;
-  display: block;
-}
+  .agree-list-link {
+    text-decoration: underline;
+    color: rgba(171, 171, 171, 1);
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: right;
+    display: block;
+  }
 
-
-  footer{
+  footer {
     padding: 30px 40px;
   }
 
-  .footer-container{
+  .footer-container {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
   }
 
-  .course-programs{
+  .course-programs {
     padding: 56px 40px;
   }
   .course-program-title-tab {
@@ -76,7 +73,6 @@ header {
     font-size: 32px;
     font-weight: 600;
     line-height: 42px;
-    
   }
 
   .course-programs-container {
@@ -92,7 +88,7 @@ header {
     position: relative;
   }
 
-  .mob{
+  .mob {
     display: none;
   }
   /* .programs-title {
@@ -129,7 +125,7 @@ header {
   .third-hero {
     height: 110px;
     background-image: url('./hero-desk-origin.png');
-    /* padding-bottom: 100px; */
+   
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
@@ -257,7 +253,7 @@ header {
 }
 
 @media screen and (max-width: 1199px) {
-  .desk{
+  .desk {
     display: none;
   }
 }
@@ -782,7 +778,7 @@ button {
     border-radius: 144px;
     margin-bottom: 48px;
   }
-
+  /* 
   .active-btn {
     width: 352px;
     border-radius: 144px;
@@ -797,12 +793,30 @@ button {
     height: 68px;
 
     color: rgba(153, 153, 153, 1);
-  }
+  } */
 
   .course-programs {
     padding: 80px 32px;
     background-image: url('./cours.png');
     background-color: rgba(245, 209, 184, 1);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .active-btn {
+    width: 352px;
+    border-radius: 144px;
+    height: 68px;
+    background-color: rgba(83, 49, 178, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .unactive-btn {
+    width: 352px;
+    border-radius: 144px;
+    height: 68px;
+
+    color: rgba(153, 153, 153, 1);
   }
 }
 
@@ -1183,18 +1197,18 @@ footer {
 }
 
 @media screen and (min-width: 1199px) {
-  .footer-links-blok{
+  .footer-links-blok {
     border-bottom: none;
   }
 
-  .footer-tab-wrap{
+  .footer-tab-wrap {
     border-bottom: none;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  .footer-links-blok{
- border-bottom: 1px solid rgba(63, 63, 63, 1);
+  .footer-links-blok {
+    border-bottom: 1px solid rgba(63, 63, 63, 1);
   }
 }
 
@@ -1217,25 +1231,24 @@ footer {
   color: rgba(255, 255, 255, 1);
 }
 
-@media screen and (min-width: 768px) and (max-width:1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-links-link {
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
   }
 
-   
-.agree-list-link {
-  text-decoration: underline;
-  color: rgba(171, 171, 171, 1);
-  font-family: IBM Plex Sans;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 21px;
-  letter-spacing: 0em;
-  text-align: center;
-  display: block;
-}
+  .agree-list-link {
+    text-decoration: underline;
+    color: rgba(171, 171, 171, 1);
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    display: block;
+  }
 
   .footer-agree {
     display: flex;
@@ -1243,7 +1256,7 @@ footer {
     align-items: center;
   }
 
-  .agree-list-link{
+  .agree-list-link {
     text-align: right;
   }
 }
@@ -1284,33 +1297,31 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-  
-.agree-list-link {
-  text-decoration: underline;
-  color: rgba(171, 171, 171, 1);
-  font-family: IBM Plex Sans;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 21px;
-  letter-spacing: 0em;
-  text-align: center;
-  display: block;
-}
+  .agree-list-link {
+    text-decoration: underline;
+    color: rgba(171, 171, 171, 1);
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    display: block;
+  }
 }
 
 .programs-list {
-  counter-reset: section; /* Initialize the counter */
+  counter-reset: section;
 }
 
 .programs-list-item {
-  position: relative; /* Needed for absolute positioning of the pseudo-element */
-  /* Other styles for your list item */
+  position: relative; 
+  
 }
 
 .programs-list-item::before {
-  counter-increment: section; /* Increment the counter */
-  content: counter(section); /* Display the counter */
-  position: absolute; /* Position the pseudo-element absolutely */
+  content: counter(section); 
+  position: absolute; 
   left: 10px;
   top: 0;
   font-family: IBM Plex Mono;
@@ -1322,8 +1333,8 @@ footer {
 
 @media screen and (min-width: 768px) {
   .programs-list-item::before {
-    counter-increment: section; /* Increment the counter */
-    content: counter(section); /* Display the counter */
+    counter-increment: section; 
+    content: counter(section); 
     position: absolute;
     left: 40px;
     top: 10px;
@@ -1331,5 +1342,83 @@ footer {
     font-size: 120px;
     font-weight: 500;
     line-height: 156px;
+  }
+}
+
+.program-text-wrap {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  background-color: rgba(255, 255, 255, 1);
+  
+  /* display: none; */
+}
+
+@media screen and (max-width: 767px) {
+  .program-text-wrap {
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(110, 110, 110, 1);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .program-text-wrap {
+    font-family: IBM Plex Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    color: rgba(110, 110, 110, 1);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .bold-text {
+    font-family: IBM Plex Mono;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+    color: rgba(26, 26, 26, 1);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bold-text {
+    font-family: IBM Plex Mono;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: rgba(26, 26, 26, 1);
+  }
+
+  .bold-text:nth-child(2) {
+    margin-bottom: 24px;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1199px) {
+  .course-programs-list {
+    max-width: 792px;
+  }
+  .active-btn {
+    width: 396px;
+    border-radius: 144px;
+    height: 68px;
+    background-color: rgba(83, 49, 178, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .unactive-btn {
+    width: 396px;
+    border-radius: 144px;
+    height: 68px;
+
+    color: rgba(153, 153, 153, 1);
   }
 }

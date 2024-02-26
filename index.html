@@ -190,7 +190,7 @@
           </ul>
         </section>
 
-        <div >
+        <div>
           <h2 class="programs-title desk">Спробувати себе в дизайні може кожна дитина</h2>
           <section class="programs-right">
             <h2 class="programs-left-title">Професійний курс Digital Design</h2>
@@ -276,19 +276,18 @@
         <h2 class="course-program-title-tab">Оберіть курс за віком дитини</h2>
         <div>
           <ul class="course-programs-list">
-            <li><button class="active-btn">Design Junior (10-12р.)</button></li>
-            <li><button class="unactive-btn">Digital Design (13-16р.)</button></li>
+            <li><button class="active-btn" id="juniorBtn">Design Junior (10-12р.)</button></li>
+            <li><button class="unactive-btn" id="adultBtn">Digital Design (13-16р.)</button></li>
           </ul>
 
           <div class="video-container">
-            <!-- The 'controls' attribute adds the default video controls -->
             <video controls>
               <source src="./video.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
 
-          <ul class="programs-list">
+          <ul class="programs-list junior-program" id="juniorProgram">
             <li class="programs-list-item">
               <div class="watch-program-wrap">
                 <div>
@@ -297,10 +296,29 @@
                 </div>
                 <div class="watch-program-box">
                   <p class="watch-program">Подивитися програму</p>
-                  <svg width="10" height="8">
-                    <use href="./symbol-defs.svg#icon-Polygon"></use>
-                  </svg>
+                  <button type="button" id="show-program">
+                    <svg width="10" height="8">
+                      <use href="./symbol-defs.svg#icon-Polygon"></use>
+                    </svg>
+                  </button>
                 </div>
+              </div>
+              <div class="program-text-wrap">
+                <p class="bold-text">Теми семестру</p>
+                <ul>
+                  <li>Основи кольорової композиції</li>
+                  <li>Знайомство з Canva: робота з шаблонами, фігурами, анімацією</li>
+                  <li>Оформлення профілю, створення сторіз та публікацій в Instagram</li>
+                  <li>Стікери для месенджерів, банер, логотип, фірмовий стиль Youtube-каналу</li>
+                  <li>Інфографіка для шкільних проєктів, оформлення презентацій</li>
+                  <li>Дизайн плаката, афіші, запрошення на освітній захід</li>
+                  <li>Чеклист для навчання</li>
+                </ul>
+                <p class="bold-text">Фінальні проекти</p>
+                <ul>
+                  <li>Оформлення власних соціальних мереж</li>
+                  <li>Оформлення презентації для шкільного проєкту</li>
+                </ul>
               </div>
             </li>
             <li class="programs-list-item">
@@ -311,10 +329,65 @@
                 </div>
                 <div class="watch-program-box">
                   <p class="watch-program">Подивитися програму</p>
-                  <svg width="10" height="8">
-                    <use href="./symbol-defs.svg#icon-Polygon"></use>
-                  </svg>
+                  <button type="button" id="show-program">
+                    <svg width="10" height="8">
+                      <use href="./symbol-defs.svg#icon-Polygon"></use>
+                    </svg>
+                  </button>
                 </div>
+              </div>
+              <div class="program-text-wrap">
+                <p class="bold-text">Теми семестру</p>
+                <ul>
+                  <li>Інструменти Photopea</li>
+                  <li>Стандартна та арт-обробка фотографій</li>
+                  <li>Створення власного бренду</li>
+                  <li>Дизайн логотипа та брендованої продукції, футболки, чашки тощо</li>
+                  <li>Знайомство з конструктором сайтів Wix: інтерфейс та інструменти</li>
+                  <li>Побудова логіки вебсторінки, робота з сіткою</li>
+                  <li>Розробка Landing Page та багатосторінкового інтернет-магазину</li>
+                  <li>Адаптація сторінок під мобільну версію</li>
+                </ul>
+                <p class="bold-text">Фінальні проЄкти</p>
+                <ul>
+                  <li>Мерч, футболка, друкована продукція</li>
+                  <li>Дизайн посадкової сторінки сайту</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="programs-list adult-program" id="adultProgram">
+            <li class="programs-list-item">
+              <div class="watch-program-wrap">
+                <div>
+                  <div class="lessons-amount">40 занять</div>
+                  <p class="semestr">семестр</p>
+                </div>
+                <div class="watch-program-box">
+                  <p class="watch-program">Подивитися програму</p>
+                  <button type="button" id="show-program">
+                    <svg width="10" height="8">
+                      <use href="./symbol-defs.svg#icon-Polygon"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="program-text-wrap">
+                <p class="bold-text">Теми семестру</p>
+                <ul>
+                  <li>Основи Adobe Photoshop: інструменти та можливості</li>
+                  <li>Теорія дизайну, кольористика та типографіка</li>
+                  <li>Корекція зображень, художня ретуш, графічна обробка</li>
+                  <li>Фірмовий стиль</li>
+                  <li>Редагування фотографій в Adobe Lightroom</li>
+                  <li>Основи Adobe Illustrator: інструменти, ефекти</li>
+                  <li>Створення векторних зображень для дизайну вебсайтів</li>
+                </ul>
+                <p class="bold-text">Фінальний проєкт</p>
+                <ul>
+                  <li>Оформлення власних соціальних мереж</li>
+                </ul>
               </div>
             </li>
             <li class="programs-list-item">
@@ -325,10 +398,29 @@
                 </div>
                 <div class="watch-program-box">
                   <p class="watch-program">Подивитися програму</p>
-                  <svg width="10" height="8">
-                    <use href="./symbol-defs.svg#icon-Polygon"></use>
-                  </svg>
+                  <button type="button" id="show-program">
+                    <svg width="10" height="8">
+                      <use href="./symbol-defs.svg#icon-Polygon"></use>
+                    </svg>
+                  </button>
                 </div>
+              </div>
+              <div class="program-text-wrap">
+                <p class="bold-text">Теми семестру</p>
+                <ul>
+                  <li>Користувацький інтерфейс і вебдизайн</li>
+                  <li>Figma: інструменти, інтерфейс, компоненти</li>
+                  <li>Сітки, шари, шрифти, зображення, геометричні фігури</li>
+                  <li>Розробка макета вебсайту</li>
+                  <li>Проєктування мобільного застосунку: архітектура, інтерфейс та навігація</li>
+                  <li>UI-kit для дизайнера і розробника, UX-проєктування</li>
+
+                  <li>Робота з брифом замовника</li>
+                </ul>
+                <p class="bold-text">Фінальний проєкт</p>
+                <ul>
+                  <li>Дизайн мобільного додатку</li>
+                </ul>
               </div>
             </li>
             <li class="programs-list-item">
@@ -339,10 +431,68 @@
                 </div>
                 <div class="watch-program-box">
                   <p class="watch-program">Подивитися програму</p>
-                  <svg width="10" height="8">
-                    <use href="./symbol-defs.svg#icon-Polygon"></use>
-                  </svg>
+                  <button type="button" id="show-program">
+                    <svg width="10" height="8">
+                      <use href="./symbol-defs.svg#icon-Polygon"></use>
+                    </svg>
+                  </button>
                 </div>
+              </div>
+              <div class="program-text-wrap">
+                <p class="bold-text">Теми семестру</p>
+                <ul>
+                  <li>
+                    Знайомство з Adobe After Effects: інструменти та базові принципи роботи в
+                    програмі
+                  </li>
+                  <li>
+                    Робота з графічними елементами та створення простих анімацій 2D-об’єктів,
+                    тексту, логотипа
+                  </li>
+
+                  <li>Робота з ефектами, плагінами, хромакеєм</li>
+                </ul>
+                <p class="bold-text">Фінальні проєкт</p>
+                <ul>
+                  <li>Створення інстаграм реклами або відеореклами на телебачення або ютуб</li>
+                </ul>
+              </div>
+            </li>
+            <li class="programs-list-item">
+              <div class="watch-program-wrap">
+                <div>
+                  <div class="lessons-amount">40 занять</div>
+                  <p class="semestr">семестр</p>
+                </div>
+                <div class="watch-program-box">
+                  <p class="watch-program">Подивитися програму</p>
+                  <button type="button" id="show-program">
+                    <svg width="10" height="8">
+                      <use href="./symbol-defs.svg#icon-Polygon"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="program-text-wrap">
+                <p class="bold-text">Теми семестру</p>
+                <ul>
+                  <li>Основи фільмування та відеомонтажу</li>
+                  <li>
+                    Монтаж, застосування переходів, накладання тексту, звуку, ефектів в Movavi
+                  </li>
+                  <li>3D-моделювання</li>
+                  <li>Створення та анімація власного персонажа</li>
+                  <li>Робота з текстурами, налаштування дії та переміщення</li>
+                  <li>Chromakey</li>
+                  <li>2D + 3D трекінг</li>
+                  <li>Matchmoving</li>
+                  <li>Rotoscoping та Compositing</li>
+                  <li>Брифи та технічне завдання, взаємодія з замовником</li>
+                </ul>
+                <p class="bold-text">Практика та проєкти</p>
+                <ul>
+                  <li>Створення власного портфоліо у вигляді шоу рілс</li>
+                </ul>
               </div>
             </li>
           </ul>
@@ -477,5 +627,74 @@
         </div>
       </div>
     </footer>
+    <script>
+      
+      function showList(listName) {
+      
+        const juniorProgram = document.getElementById('juniorProgram');
+        const adultProgram = document.getElementById('adultProgram');
+       
+        const juniorBtn = document.getElementById('juniorBtn');
+        const adultBtn = document.getElementById('adultBtn');
+
+       
+        if (listName === 'junior') {
+          juniorProgram.style.display = '';
+          adultProgram.style.display = 'none';
+          juniorBtn.classList.add('active-btn');
+          adultBtn.classList.remove('active-btn');
+        } else if (listName === 'adult') {
+          juniorProgram.style.display = 'none';
+          adultProgram.style.display = '';
+          adultBtn.classList.add('active-btn');
+          juniorBtn.classList.remove('active-btn');
+          juniorBtn.classList.add('unactive-btn');
+        }
+
+        
+        localStorage.setItem('selectedList', listName);
+      }
+
+    
+      document.getElementById('juniorBtn').addEventListener('click', function () {
+        showList('junior');
+      });
+
+      document.getElementById('adultBtn').addEventListener('click', function () {
+        showList('adult');
+      });
+
+     
+      function loadListFromLocalStorage() {
+        const selectedList = localStorage.getItem('selectedList');
+      
+        if (selectedList) {
+          showList(selectedList);
+        } else {
+          showList('junior');
+        }
+      }
+
+     
+      document.addEventListener('DOMContentLoaded', loadListFromLocalStorage);
+
+      
+
+     
+
+      document.querySelectorAll('#show-program').forEach((button) => {
+        button.addEventListener('click', function () {
+          const programTextWrap =
+            this.closest('.programs-list-item').querySelector('.program-text-wrap');
+          if (programTextWrap.style.maxHeight && programTextWrap.style.maxHeight !== '0px') {
+  
+            programTextWrap.style.maxHeight = '0';
+          } else {
+         
+            programTextWrap.style.maxHeight = programTextWrap.scrollHeight + 'px';
+          }
+        });
+      });
+    </script>
   </body>
 </html>

@@ -1,57 +1,302 @@
+
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    button {
+      cursor: pointer;
+      border: none;
+      height: 30px;
+      width: 100px;
+      background: transparent;
+    }
+
+    .active {
+      background-color: teal;
+      border-radius: 12px;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .first {
+      display: flex;
+      border-radius: 12px;
+      background-color: tomato;
+      font-size: 20px;
+      color: white;
+      width: 200px;
+    }
+
+    .third li,
+    .second li {
+      width: 400px;
+      height: 100px;
+      border: 1px solid black;
+      border-radius: 7px;
+    }
+    p {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <ul class="first">
+    <li><button id="juniorBtn" class="active">Junior</button></li>
+    <li><button id="adultBtn">Adult</button></li>
+  </ul>
+
+  <ul id="juniorList" class="second">
+    <li>
+        Junior
+
+        <button>View Programm</button>
+        <p>Some text about programm</p>
+      </li>
+      <li>
+        Junior
+        <button>View Programm</button>
+        <p>Some text about programm</p>
+      </li>
+      <li>
+        Junior
+        <button>View Programm</button>
+        <p>Some text about programm</p>
+      </li>
+      <li>
+        Junior
+        <button>View Programm</button>
+        <p>Some text about programm</p>
+      </li>
+    <!-- Junior items here -->
+  </ul>
+
+  <ul id="adultList" class="third" style="display: none;">
+    <!-- Adult items here -->
+     <ul class="third">
+      <li>
+        Adult
+        <button>View Programm</button>
+        <p>Some text about programm</p>
+      </li>
+      <li>
+        Adult
+        <button>View Programm</button>
+        <p>Some text about programm</p>
+      </li>
+      <li>
+        Adult
+        <button>View Programm</button>
+        <p>Some text about programm</p>
+      </li>
+      <li>
+        Adult
+        <button>View Programm</button>
+        <p>Some text about programm</p>
+      </li>
+    </ul>
+  </ul>
+
+  <!-- <script>
+    document.getElementById('juniorBtn').addEventListener('click', function() {
+      document.getElementById('juniorList').style.display = '';
+      document.getElementById('adultList').style.display = 'none';
+    });
+
+    document.getElementById('adultBtn').addEventListener('click', function() {
+      document.getElementById('adultList').style.display = '';
+      document.getElementById('juniorList').style.display = 'none';
+    });
+  </script> -->
+  <!-- <script>
+  
+  var juniorBtn = document.getElementById('juniorBtn');
+  var adultBtn = document.getElementById('adultBtn');
+
+  // Add click event listener to the "Junior" button
+  juniorBtn.addEventListener('click', function() {
+    // Show the "Junior" list and hide the "Adult" list
+    document.getElementById('juniorList').style.display = '';
+    document.getElementById('adultList').style.display = 'none';
+
+    // Add the "active" class to the "Junior" button and remove it from the "Adult" button
+    juniorBtn.classList.add('active');
+    adultBtn.classList.remove('active');
+  });
+
+  // Add click event listener to the "Adult" button
+  adultBtn.addEventListener('click', function() {
+    // Show the "Adult" list and hide the "Junior" list
+    document.getElementById('adultList').style.display = '';
+    document.getElementById('juniorList').style.display = 'none';
+
+    // Add the "active" class to the "Adult" button and remove it from the "Junior" button
+    adultBtn.classList.add('active');
+    juniorBtn.classList.remove('active');
+  });
+</script> -->
+<script>
+  // Function to show the correct list and highlight the active button
+  function showList(listName) {
+    if (listName === 'junior') {
+      document.getElementById('juniorList').style.display = '';
+      document.getElementById('adultList').style.display = 'none';
+      juniorBtn.classList.add('active');
+      adultBtn.classList.remove('active');
+    } else if (listName === 'adult') {
+      document.getElementById('adultList').style.display = '';
+      document.getElementById('juniorList').style.display = 'none';
+      adultBtn.classList.add('active');
+      juniorBtn.classList.remove('active');
+    }
+    // Save the current selection to local storage
+    localStorage.setItem('selectedList', listName);
+  }
+
+  // Event listeners for the buttons
+  document.getElementById('juniorBtn').addEventListener('click', function() {
+    showList('junior');
+  });
+
+  document.getElementById('adultBtn').addEventListener('click', function() {
+    showList('adult');
+  });
+
+  // Function to load the list from local storage on page load
+  function loadListFromLocalStorage() {
+    const selectedList = localStorage.getItem('selectedList');
+    // If there's a saved list, show it, otherwise default to 'junior'
+    if (selectedList) {
+      showList(selectedList);
+    } else {
+      showList('junior');
+    }
+  }
+
+  // Call the function on page load to set the initial state
+  loadListFromLocalStorage();
+</script>
+
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-			*{
-				margin: 0;
-				padding: 0;
-			}
-      .parent {
-        width: 800px;
-        height: 700px;
-        border: 2px solid black;
-				display: flex;
-				padding: 100px;
-				box-sizing: border-box;
+
+      *{
+        box-sizing: border-box;
+      }
+      button {
+        cursor: pointer;
+        border: none;
+        width: 70px;
+        height: 30px;
+        width: 100px;
+        background: transparent;
+      
+      }
+
+      .active{
+        background-color: teal;
+         border-radius: 12px;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
       }
 
       .first {
+        display: flex;
+    
+        border-radius: 12px;
+        background-color: tomato;
+        font-size: 20px;
+        color: white;
         width: 200px;
-        height: 200px;
-        border: 2px solid black;
       }
 
-      .second {
-        width: 200px;
-        height: 400px;
-        border: 2px solid black;
+      .third li,
+      .second li {
+        width: 400px;
+        height: 100px;
+        border: 1px solid black;
+        border-radius: 7px;
+      }
+      p {
+        display: none;
       }
 
-			@media screen and (max-width: 1199px) {
-				.parent{
-				    flex-direction: column;
-						position: relative;
-				}
-
-				h2{
-          position: absolute;
-					/* top: 0;
-					left: 0; */
-				}
-			}
+      .third{
+        display: none;
+      }
     </style>
   </head>
   <body>
-    <div class="parent">
-      <div class="first"></div>
+    <ul class="first">
+      <li><button class="active">Junior</button></li>
+      <li><button class="unactive">Adult</button></li>
+    </ul>
 
-      <div class="box">
-        <h2>Title main title</h2>
-        <div class="second"></div>
-      </div>
-    </div>
+    <ul class="second">
+      <li>
+        Junior
+
+        <button>View Programm</button>
+        <p>Some text about programm</p>
+      </li>
+      <li>
+        Junior
+        <button>View Programm</button>
+        <p>Some text about programm</p>
+      </li>
+      <li>
+        Junior
+        <button>View Programm</button>
+        <p>Some text about programm</p>
+      </li>
+      <li>
+        Junior
+        <button>View Programm</button>
+        <p>Some text about programm</p>
+      </li>
+    </ul>
+
+    <ul class="third">
+      <li>
+        Adult
+        <button>View Programm</button>
+        <p>Some text about programm</p>
+      </li>
+      <li>
+        Adult
+        <button>View Programm</button>
+        <p>Some text about programm</p>
+      </li>
+      <li>
+        Adult
+        <button>View Programm</button>
+        <p>Some text about programm</p>
+      </li>
+      <li>
+        Adult
+        <button>View Programm</button>
+        <p>Some text about programm</p>
+      </li>
+    </ul>
   </body>
-</html>
+</html> -->
+
